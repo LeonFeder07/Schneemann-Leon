@@ -5,7 +5,10 @@ public class Schneemannszene {
     private GLHimmel himmel;
     private GLBoden  boden;
 
-    private Schneemann schneemann;;
+    private Schneemann schneemann;
+    private Europaeer europaeer;
+    private Ureinwohner   ureinwohner ;
+    private Asiate asiate;
 
     public Schneemannszene(){
         kamera = new GLSchwenkkamera(800,600);
@@ -15,6 +18,10 @@ public class Schneemannszene {
         himmel = new GLHimmel("src/img/Himmel.jpg");
 
         schneemann = new Schneemann(0,0);
+        europaeer = new Europaeer(300,0);
+        ureinwohner   = new Ureinwohner(-300,0);
+        asiate = new Asiate (0,300);
+
         
     }
 }
